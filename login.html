@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>登录</title>
+    <link
+      rel="shortcut icon"
+      href="./img/bitbug_favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/login.css" />
+  </head>
+  <body>
+    <header>
+      <div class="w">
+        <img class="jk" src="./img/100.jpg" alt="" />
+        <ul>
+          <li><a href="./index.html">联想首页</a></li>
+          <li><a href="">商城</a></li>
+          <li><a href="">企业购</a></li>
+          <li><a href="">政教及大企业</a></li>
+          <li><a href="">服务</a></li>
+          <li><a href="">会员</a></li>
+          <li><a href="">社区</a></li>
+          <li><a href="">品牌</a></li>
+          <li><a href="">购买</a></li>
+        </ul>
+        <img
+          class="kj"
+          src="./img/c8f87ce8-1e14-4bb3-854e-f86af0f07072.png"
+          alt=""
+        />
+      </div>
+    </header>
+    <img class="lk" src="./img/101.png" alt="" />
+    <div class="dly">
+      <form method="post">
+        <h2>联想会员登录</h2>
+        <img src="./img/102.png" alt="" />
+        <div class="kl">
+          <input type="text" placeholder="邮箱/手机号" name="username" />
+<span class="qw"></span>
+          <input type="password" placeholder="密码" name="password" />
+        <span class="wq"></span>
+        </div>
+        <input type="checkbox" name="" id="ok" class="remember" />
+        已阅读并同意<span>注册协议</span>和<span>隐私政策</span>
+        <a href="./index.html"><button>登录</button></a>
+        <div class="gh">
+          <h4>手机验证码登录</h4>
+          <div class="fj"><i>立即注册</i>|<i>忘记密码?</i></div>
+        </div>
+        <img class="ty" src="./img/103.png" alt="" />
+      </form>
+    </div>
+    <script>
+      let remember = document.querySelector(".remember");
+      let uname = document.querySelector("[name=username]");
+      let pass = document.querySelector("[name=password]");
+      let form = document.querySelector("form");
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        if (!remember.checked) {
+          alert("请先同意协议");
+
+          return;
+        }
+        let obj = {
+          uname: uname.value,
+          pass: pass.value,
+        };
+        localStorage.setItem("data", JSON.stringify(obj));
+        location.href = "./index.html";
+      });
+      let data = JSON.parse(localStorage.getItem("data"));
+      if (data) {
+        uname.value = data.uname;
+        pass.value = data.pass;
+        remember.checked = true;
+      }
+    </script>
+    <div class="ct">
+      <div>版权所有：1998-2022 联想集团|法律公告|隐私权政策</div>
+      <div>
+        京ICP备11035381|京公网安备110108007970号|营业执照：110000410127232
+      </div>
+    </div>
+  </body>
+</html>

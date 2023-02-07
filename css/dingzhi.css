@@ -1,0 +1,163 @@
+body{
+    background-color: #fff;
+}
+/* <!-- Demo styles --> */
+
+.swiper-container {
+  width: 100%;
+  height: auto;
+  padding: 5.625rem 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.swiper-slide img {
+  width: 14.375rem;
+  height: 17.5rem;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 1.125rem;
+  background: #fff;
+  height: 12.5rem;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  transition-property: all;
+  transition: all 300ms;
+}
+#progressEffect {
+  position: absolute;
+  z-index: 10;
+  top: 1.25rem;
+  left: 1.25rem;
+}
+.swiper-wrapper {
+  -webkit-transition-timing-function: linear; /*之前是ease-out*/
+  -moz-transition-timing-function: linear;
+  -ms-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  margin: 0 auto;
+}
+.tb {
+  position: sticky;
+  top: 0;
+  height: 3.75rem;
+  background-color: #fff;
+  z-index: 5;
+}
+.tb .w img:first-child {
+  padding-top: .3125rem;
+}
+.tb .w i {
+  position: absolute;
+  top: .9375rem;
+  left: 70.625rem;
+}
+video {
+  margin-top: -0.625rem;
+  width: 100%;
+  height: 55rem;
+  opacity: 1;
+}
+.ct {
+  position: relative;
+  height: 41.875rem;
+  overflow: hidden;
+}
+.ct h1 {
+  position: absolute;
+  top: 14.375rem;
+  left: 33.75rem;
+  color: rgb(255, 255, 255);
+  font-size: 3.125rem;
+  font-weight: bold;
+}
+.ct p {
+  position: absolute;
+  top: 19.625rem;
+  left: 41rem;
+  color: #fff;
+  font-size: 1.375rem;
+  font-weight: 400;
+}
+.ct .er img:first-child {
+  position: absolute;
+  top: 25.0625rem;
+  left: 33.8125rem;
+  width: 9.375rem;
+  height: 4.1875rem;
+}
+.ct .er img:last-child {
+  position: absolute;
+  top: 25.25rem;
+  left: 47.4375rem;
+  width: 13.875rem;
+  height: 4.1875rem;
+}
+.qyq {
+  height: 20.3125rem;
+}
+.qyq .hjk {
+  font-size: 2.5rem;
+  color: #424855;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 5rem;
+}
+.qyq .zuix ul{
+    position: absolute;
+    top: 62.5rem;
+    left: 38.125rem;
+    width: 20.625rem;
+    height: 1.875rem;
+    border-bottom: .125rem solid #ccc;
+border-image: linear-gradient(105deg,#8cff32 0%,#12a8ff 100%) 4 4;
+border-top: 0 solid transparent;
+border-left: 0 solid transparent;
+border-right: 0 solid transparent;
+}
+.qyq .zuix ul li{
+    display: inline-block;
+    
+    font-style: 1.25rem;
+
+}
+
+.qyq .zuix ul li:last-child{
+margin-left: 3.75rem;
+
+}
+.qyq .zuix ul li:first-child{
+    font-weight: 600;
+    margin-right: 3.75rem;
+    background: linear-gradient(to right,#76f713,#16aaf9);
+    -webkit-background-clip: text;
+        color: transparent;
+
+}
+.fgh img{
+    width: 100%;
+}
+.fgh img:first-child{
+    margin-top: 5rem;
+    height: 31.25rem;
+}
+.fgh img:nth-child(2){
+    margin-top: -0.3125rem;
+    height: 56.25rem;
+}
+.fgh img:last-child{
+    height: 15.625rem;
+}

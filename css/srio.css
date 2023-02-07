@@ -1,0 +1,105 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+.b {
+  width: 78.125rem;
+  margin: 0 auto;
+}
+.swiper-container-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 9.375rem;
+  left: 0;
+  width: 100%;
+}
+body {
+  background-color: #fff;
+}
+header .b ul{
+  margin-left: 1.875rem;
+}
+/* 图片 */
+.gh .b {
+  height: 26.25rem;
+  padding-top: 3.125rem;
+  background-color: #f7f7f7;
+}
+.gh .b ul {
+  text-align: center;
+}
+.gh .b ul li {
+  display: inline-block;
+}
+.gh .b .dy li {
+  margin: -0.1875rem;
+}
+.gh .b .de li {
+  margin-top: -0.3125rem;
+}
+.gh .b .de li:hover {
+  box-shadow: .1875rem .1875rem .1875rem .1875rem rgba(0, 0, 0, 0.1);
+}
+.gh .b ul li:hover img {
+  transform: scale(1.03);
+  transition: all .5s;
+}
+/* 今日推荐 */
+.jrtj .b{
+  width: 80%;
+    height: 52.6875rem;
+    margin-top: .625rem;
+    border: .0625rem solid rgba(72, 64, 64, 0.256);
+    position: relative;
+}
+ h2{
+    text-align: center;
+    font-size: 3.125rem;
+    font-weight: normal;
+    margin-top: 3.125rem;
+    color: rgba(0, 0, 0, 0.658);
+}
+.jrtj .b .hk-1 img{
+    width: 50.9375rem;
+}
+.jrtj .b .hk-2 img{
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    width: 25rem;
+}
+.jrtj .b .hk-3 img{
+    position: absolute;
+    top: 21.75rem;
+    left: .3125rem;
+    width: 24.0625rem;
+}
+.jrtj .b .hk-4 img{
+    position: absolute;
+    top: 21.75rem;
+    left: 24.5rem;
+    width: 26.5rem;
+}
+.jrtj .b .hk-5 img{
+    position: absolute;
+    top: 37.4375rem;
+    left: 24.5625rem;
+    width: 26.5rem;
+    z-index: 1;
+}
+.jrtj .b .hk-6 img{
+    position: absolute;
+    top: 37.375rem;
+    right: 0rem;
+    width: 26.3125rem;
+}

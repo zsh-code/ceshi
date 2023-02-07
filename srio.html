@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>联想合伙人_联想商城0318</title>
+    <link
+      rel="shortcut icon"
+      href="./img/bitbug_favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
+    <script src="./swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/srio.css" />
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/srio.js"></script>
+
+  </head>
+  <body>
+    <!-- 快捷导航 -->
+    <section>
+      <div class="w">
+        <ul>
+          <li><a href="./index.html">联想首页</a></li>
+          <li><a href="">商城</a></li>
+          <li><a href="">企业购</a></li>
+          <li><a href="">政教及大企业</a></li>
+          <li><a href="">服务</a></li>
+          <li><a href="">品牌</a></li>
+          <li><a href="">下载app</a></li>
+        </ul>
+        <ul>
+          <li>会员</li>
+          <li>社区</li>
+
+          <li class="ds">购买<img class="tp" src="./img/1.png" alt="" /></li>
+        </ul>
+      </div>
+      <div class="pg">
+        <span>注册</span><span>|</span
+        ><span><a href="./login.html"> 登录</a></span>
+      </div>
+      <img class="lkj" src="./img/c8f87ce8-1e14-4bb3-854e-f86af0f07072.png" alt="" />
+      <ol class="ol">
+        <li>商城</li>
+        <li>企业购</li>
+        <li>门店</li>
+      </ol>
+    </section>
+    <script>
+      let ol = document.querySelector(".ol");
+      let ds = document.querySelector(".ds");
+      let tp = document.querySelector(".tp");
+      ds.addEventListener("mouseenter", function () {
+        ol.style.display = "block";
+        tp.style.transform = "rotate(180deg)";
+      });
+      ds.addEventListener("mouseleave", function () {
+        ol.style.display = "none";
+        tp.style.transform = "";
+      });
+      //---------------------------------------
+      let pg = document.querySelector('.pg')
+    let username = JSON.parse(localStorage.getItem('data'))
+    if (!username) {
+      pg.innerHTML = `
+      <span>注册</span><span>|</span
+        ><span><a href="./login.html"> 登录</a></span>
+        `
+    }
+    else {
+      pg.innerHTML = `
+        <a href="javascript:;">你好 ${username.uname}</a>
+      `
+    }
+
+    </script>
+    <!-- 头部导航 -->
+    <header>
+      <div class="b">
+        <a href="./index.html"> <img src="./img/2.png" alt="" /></a>
+        <ul>
+          <li><a href="./xinpin.html">新品</a></li>
+          <li><a href="./dingzhi.html">定制</a></li>
+          <li><a href="./srio.html">合伙人</a></li>
+          <li><a href="">以旧换新</a></li>
+          <li><a href="./xuesheng.html">学生</a></li>
+          <li><a href="">游戏</a></li>
+          <li><a href="">直播</a></li>
+          <li><a href="">0元试用</a></li>
+          <li><a href="">乐豆 购</a></li>
+          <li><a href="">0元购</a></li>
+        </ul>
+        <input type="text" value="520免单节" />
+        <img class="kj" src="./img/3.png" alt="" />
+      </div>
+    </header>
+    <!-- 轮播图 -->
+    <div class="b">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./img/1.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/2.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/3.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/4.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/5.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/6.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/7.jpg" />
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        effect: "fade",
+        autoplay: true,
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+    <!-- 图片 -->
+    <div class="gh">
+      <div class="b">
+        <ul class="dy">
+          <li><img src="./img/40.jpg" alt="" /></li>
+          <li><img src="./img/41.jpg" alt="" /></li>
+          <li><img src="./img/42.jpg" alt="" /></li>
+          <li><img src="./img/43.jpg" alt="" /></li>
+        </ul>
+        <ul class="de">
+          <li><img src="./img/44.jpg" alt="" /></li>
+          <li><img src="./img/45.jpg" alt="" /></li>
+          <li><img src="./img/46.jpg" alt="" /></li>
+          <li><img src="./img/47.jpg" alt="" /></li>
+        </ul>
+      </div>
+    </div>
+    <!-- 今日推荐 -->
+    <h2>今日推荐</h2>
+    <div class="jrtj">
+      <div class="b">
+        <div class="hk-1"><img src="./img/110.png" alt="" /></div>
+        <div class="hk-2"><img src="./img/111.png" alt="" /></div>
+        <div class="hk-3"><img src="./img/112.png" alt="" /></div>
+        <div class="hk-4"><img src="./img/113.png" alt="" /></div>
+        <div class="hk-5"><img src="./img/114.png" alt="" /></div>
+        <div class="hk-6"><img src="./img/115.png" alt="" /></div>
+      </div>
+    </div>
+    <!-- 右侧导航模块 -->
+    <div class="ycdh">
+      <ul>
+        <li>
+          <a href="javascript:;"
+            ><img class="vb" src="./img/120.png" alt="" /></a
+          ><a href="javascript:;"
+            ><img class="bv" src="./img/121.png" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="javascript:;"
+            ><img class="vb" src="./img/122.png" alt="" /></a
+          ><a href="javascript:;"
+            ><img class="bv" src="./img/123.png" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="javascript:;"
+            ><img class="vb" src="./img/132.png" alt="" /></a
+          ><a href="javascript:;"
+            ><img class="bv" src="./img/131.png" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="javascript:;"
+            ><img class="vb" src="./img/124.png" alt="" /></a
+          ><a href="javascript:;"
+            ><img class="bv" src="./img/125.png" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="javascript:;"
+            ><img class="vb" src="./img/126.png" alt="" /></a
+          ><a href="javascript:;"
+            ><img class="bv" src="./img/127.png" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="javascript:;"
+            ><img class="vb" src="./img/128.png" alt="" /></a
+          ><a href="javascript:;"
+            ><img class="bv" src="./img/129.png" alt=""
+          /></a>
+        </li>
+        <li class="back">
+          <a href="javascript:;"><img src="./img/130.png" alt="" /></a
+          ><a href="javascript:;"><img src="./img/130.png" alt="" /></a>
+        </li>
+      </ul>
+    </div>
+    <!-- 底部信息 -->
+    <div class="jkl">
+      <div class="w">
+        <img class="rty" src="./img/90.png" alt="" />
+        <ul>
+          <li>
+            <a href="">购物指南</a>
+            <a href="">服务商信息</a>
+            <a href="">购买流程</a>
+            <a href="">注册登录</a>
+            <a href="">商品评价</a>
+            <a href="">&nbsp;</a>
+          </li>
+          <li>
+            <a href="">配送方式</a>
+            <a href="">配送方式</a>
+            <a href="">配送方式信息</a>
+            <a href="">签收原则</a>
+            <a href="">物流查询</a>
+            <a href="">&nbsp;</a>
+          </li>
+          <li>
+            <a href="">支付方式</a>
+            <a href="">分期支付</a>
+            <a href="">支付方式</a>
+            <a href="">支付问题 </a>
+            <a href="">&nbsp;</a>
+            <a href="">&nbsp;</a>
+          </li>
+          <li>
+            <a href="">订单信息</a>
+            <a href="">订单信息</a>
+            <a href="">发票信息</a>
+            <a href="">手机激活查询</a>
+            <a href="">&nbsp;</a>
+            <a href="">&nbsp;</a>
+          </li>
+          <li>
+            <a href="">售后服务</a>
+            <a href="">售后服务总则</a>
+            <a href="">24小时在线客服</a>
+            <a href="">联想服务入口</a>
+            <a href="">热门解决方案</a>
+            <a href="">Lenovo Quick Fix工具</a>
+          </li>
+          <li>
+            <a href="">其他说明</a>
+            <a href="">服务承诺</a>
+            <a href="">账户安全</a>
+            <a href="">手机产品购买须知</a>
+            <a href=""> 环境信息</a>
+            <a href="">&nbsp;</a>
+          </li>
+        </ul>
+        <img class="yh" src="./img/91.png" alt="" />
+        <div class="uh">
+          <img src="./img/93.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
